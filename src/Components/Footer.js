@@ -1,12 +1,14 @@
 import React from "react";
 import Container from "./styles/Container.styled";
 import Flex from "./styles/Flex.styled";
+import StyledFooter from "./styles/Footer.styled";
+import SocialIcons from "./SocialIcons";
 
 const Footer = (props) => {
   return (
-    <div>
+    <StyledFooter>
       <Container>
-        <img src="./images/logo-white.svg" alt="footer-logo" />
+        <img src="./images/logo_white.svg" alt="footer-logo" />
         <Flex>
           <ul>
             <li>
@@ -28,10 +30,11 @@ const Footer = (props) => {
             <li>Blog</li>
             <li>Contact Us</li>
           </ul>
+          <SocialIcons />
         </Flex>
         <p>&copy; 2022 Hubble. All right reserved</p>
       </Container>
-    </div>
+    </StyledFooter>
   );
 };
 

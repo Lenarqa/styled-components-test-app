@@ -3,7 +3,7 @@ import Header from "./Components/Header";
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./Components/styles/Global";
 import content from "./content";
-import Card from "./Components/styles/Card";
+import Card from "./Components/Card";
 import Footer from "./Components/Footer";
 
 const theme = {
@@ -13,7 +13,7 @@ const theme = {
     footer: "#003333",
   },
 
-  mobile: '768px',
+  mobile: "768px",
 };
 
 function App() {
@@ -21,13 +21,13 @@ function App() {
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
-          <Header />
-          <Container>
-            {content.map((item,index) => (
-              <Card key={index} item={item}/>
-            ))}
-          </Container>
-          <Footer />
+        <Header />
+        <Container>
+          {content.map((item, index) => (
+            <Card key={index} item={item} />
+          ))}
+        </Container>
+        <Footer />
       </>
     </ThemeProvider>
   );

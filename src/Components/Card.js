@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledCard } from './Card.styled';
+import { StyledCard } from './styles/Card.styled';
 
 const Card = ({item: {id, title, body, image}}) => {
     return (
